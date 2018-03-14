@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+	<meta charset="utf-8">
+	<title>Sundlaugar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="dist/styles.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+<header class="nav-down">
+    <a href="#top_page"><b class="glyphicon glyphicon-menu-up"></b></a>
+</header>
+
+<!--Jumbotron-herobanner-->
+<a name="top_page"></a>
+	<div class="jumbotron jumbotron_forsida">
+		     <img src="icon/logo_hvitt.svg">
+		     <p>Allar sundlaugar íslands á einni síðu</p>
+	</div>
+
+
+<!--Jumbotron-herobanner-end-->
+
+<!--LEITIN-->
+	<div class="container">
+
+			<div class="ui-widget">
+					<div id="the-basics">
+						<form>
+  							<input class="typeahead form-controle leitar-input" type="text" placeholder="Hvar vilt þú fara í sund?">
+  						</form>
+					</div>
+			</div>
+
+	</div>
+<!--LEITIN-end-->
+
+<!--flokkun-->
+
+<!--flokkun í Mobile-->
+			<div class="flokka-val" id="stad-val">
+				<ul class="flokka-val-inner_2">
+					<li><button class="filter myMobileButton" data-filter=".sudur"><b class="glyphicon glyphicon-menu-right"></b> Suður</button></li>
+					<li><button class="filter myMobileButton" data-filter=".vestur"><b class="glyphicon glyphicon-menu-right"></b> Vestur</button></li>
+					<li><button class="filter myMobileButton" data-filter=".hofud"><b class="glyphicon glyphicon-menu-right"></b> Höfuðborgin</button></li>
+					<li><button class="filter myMobileButton" data-filter=".nordur"><b class="glyphicon glyphicon-menu-right"></b> Norður</button></li>
+					<li><button class="filter myMobileButton" data-filter=".austur"><b class="glyphicon glyphicon-menu-right"></b> Austur</button></li>
+				</ul>
+			</div>
+<!--flokkun í Mobile endar hér-->
+
+<div class="baksida_main">
+	<div class="container">
+
+		 <div class="row stad_val">
+            <div class="col-md-8">
+
+            <button class="velja_stad" id="velja_stad_takki">Velja Landshluta</button>
+
+            <div class="flokka-val">
+
+               	<ul class="flokka-val-inner">
+					<li><button class="filter myButtonLink" data-filter=".sudur">Suður</button></li>
+					<li><button class="filter myButtonLink" data-filter=".vestur">Vestur</button></li>
+					<li><button class="filter myButtonLink" data-filter=".hofud">Höfuðborgin</button></li>
+					<li><button class="filter myButtonLink" data-filter=".nordur">Norður</button></li>
+					<li><button class="filter myButtonLink" data-filter=".austur">Austur</button></li>
+				</ul>
+
+			
+			
+			  </div>
+		</div>
+
+		    <div class="col-md-4 right_flokka-val">
+                    <a href="#" id="two_cards"><img id="show_two_cards" src="icon/show_two_cards_dark.svg" class="first"></a>
+                    <a href="#" id="four_cards"><img  id="show_four_cards" src="icon/show_four_cards_light.svg"></a>
+                    <button class="filter myButtonLink opid_nuna_takki" data-filter=".hofud, .austur, .nordur, .vestur, .sudur">Opið núna?</button>
+                </div>
+		 </div>
+	
+	 
+	</div>
+
+
+
+<!--flokkun-end-->
+
+
+<!--CARDS 2 in row-->
+<div class="container">
+	
+       <div class="Cards_big" id="cardsBig">
+			<div class="row">
+		 	 
+				 	<div class="col-md-6 col-sm-12 bigCard mix nordur" data-my-order="1">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard big_hofsoslaug" id="hofsoslaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Hofsós sundlaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+					<div class="col-md-6 col-sm-12 bigCard mix vestur" data-my-order="2">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard big_krossneslaug" id="krossneslaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Krossneslaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				  <div class="col-md-6 col-sm-12 bigCard mix hofud renni" data-my-order="3">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard big_laugardalslaug" id="laugardalslaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Laugardalslaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+				    <div class="col-md-6 col-sm-12 bigCard mix hofud bretti" data-my-order="4">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard big_sundholl_rvk" id="sundholl_rvk">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Sundhöll RVK</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+				    <div class="col-md-6 col-sm-12 bigCard mix sudur bretti" data-my-order="5">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard big_laugaskard" id="laugaskard">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg">Laugaskarð</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+				    <div class="col-md-6 col-sm-12 bigCard mix hofud sjosund" data-my-order="6">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard big_nautholsvik" id="nautholsvik">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Nauthólsvík</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+				    <div class="col-md-6 col-sm-12 bigCard mix nordur renni" data-my-order="7">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard akureyrarlaug" id="akureyrarlaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Akureyrarlaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix nordur renni" data-my-order="8">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard thelamerkurlaug" id="thelamerkurlaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Þelamerkurlaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix nordur" data-my-order="9">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard husavikurlaug" id="husavikurlaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Húsavíkurlaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix vestur renni" data-my-order="10">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard akraneslaug" id="akraneslaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Jaðarsbakkalaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix vestur renni" data-my-order="11">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard borgarneslaug" id="borgarneslaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Borgarneslaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix vestur" data-my-order="12">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard patreksfjardarlaug" id="patreksfjardarlaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Patreksfjarðarlaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix austur renni" data-my-order="13">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard hornafjardarlaug" id="hornafjardarlaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Hornafjarðarlaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix austur renni" data-my-order="14">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard egilsstadalaug" id="egilsstadalaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Egilsstaðalaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix austur renni" data-my-order="15">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard eskifjardarlaug" id="eskifjardarlaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Eskifjarðarlaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix austur renni" data-my-order="16">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard neskaupstadarlaug" id="neskaupstadarlaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Neskaupstaðarlaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix sudur renni" data-my-order="17">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard gardur_laug" id="gardur_laug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Sundlaugin Garði</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix sudur renni" data-my-order="18">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard hella_laug" id="hella_laug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Sundlaugin Hellu</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix sudur renni" data-my-order="19">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard selfosslaug" id="selfosslaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Sundhöll Selfoss</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix sudur" data-my-order="20">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard vik_laug" id="vik_laug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Sundlaugin Vík</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix sudur" data-my-order="21">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard brautarholtslaug" id="brautarholtslaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Brautarholtslaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix hofud renni" data-my-order="22">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard lagafellslaug" id="lagafellslaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Lágafellslaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix hofud renni" data-my-order="23">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard alftaneslaug" id="alftaneslaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Álftaneslaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+
+				    <div class="col-md-6 col-sm-12 bigCard mix hofud renni" data-my-order="24">
+				        <a href="hofsos.html">
+				        <div class="inner_bigCard breidholtslaug" id="breidholtslaug">
+				            <div class="inner_bigCard_headline">
+				                <h2><img class="stad_icon_stor" src=
+				                "icon/stadsetningar_icon.svg"> Breiðholtslaug</h2>
+				            </div>
+				            <div class="inner_bigCard_afgreidslutimar">
+				                <h3>AFGREIÐSLUTÍMI</h3>
+				                <div class="row">
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_dagar">
+				                        <ul>
+				                            <li>Mán. - fim.</li>
+				                            <li>Fös.</li>
+				                            <li>Helgar</li>
+				                        </ul>
+				                    </div>
+				                    <div class="col-md-6 inner_bigCard_afgreidslutimar_timar">
+				                        <ul>
+				                            <li>06:30 - 22:00</li>
+				                            <li>06:30 - 20:00</li>
+				                            <li>09:00 - 18:00</li>
+				                        </ul>
+				                    </div>
+				                </div>
+				            </div>
+				        </div></a>
+				    </div>
+
+				 
+			</div>
+	   </div>  
+
+       <div class="cardsSmall" id="cards_small">
+                <div class="row">
+                    
+                       <div class="col-md-3 col-sm-12 smallCard mix nordur" data-my-order="1">
+					        <a href="hofsos.html">
+					        <div class="small_hofsoslaug" id="hofsoslaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Hofsóslaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Fim</li>
+					                            <li>Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 22:00</li>
+					                            <li>06:30 - 22:00</li>
+					                            <li>08:30 - 22:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix vestur" data-my-order="2">
+					        <a href="hofsos.html">
+					        <div class="small_krossneslaug" id="krossneslaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Krossneslaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Fim</li>
+					                            <li>Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 22:00</li>
+					                            <li>06:30 - 20:00</li>
+					                            <li>09:00 - 18:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix hofud renni" data-my-order="3">
+					        <a href="hofsos.html">
+					        <div class="small_laugardalslaug" id="laugardalslaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Laugardalslaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Laug - Sun</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>07:05 - 20:15</li>
+					                            <li>11:00 - 15:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix hofud bretti" data-my-order="4">
+					        <a href="hofsos.html">
+					        <div class="small_sundholl_rvk" id="sundholl_rvk">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Sundhöll RVK</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix sudur bretti" data-my-order="5">
+					        <a href="hofsos.html">
+					        <div class="small_laugaskard" id="laugaskard">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Laugaskarð</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:00 - 22:00</li>
+					                            <li>09:00 - 18:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix hofud sjosund" data-my-order="6">
+					        <a href="hofsos.html">
+					        <div class="small_nautholsvik" id="nautholsvik">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Nauthólsvík</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Fim</li>
+					                            <li>Föst</li>
+					                            <li>Laug</li>
+					                            <li>Sun</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 22:00</li>
+					                            <li>06:30 - 20:00</li>
+					                            <li>08:00 - 16:00</li>
+					                            <li>10:00 - 18:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix nordur renni" data-my-order="7">
+					        <a href="hofsos.html">
+					        <div class="small_akureyrarlaug" id="akureyrarlaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Akureyrarlaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Laug</li>
+					                            <li>Sun</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>07:00 - 22:00</li>
+					                            <li>10:00 - 18:00</li>
+					                            <li>Lokað</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix nordur renni" data-my-order="8">
+					        <a href="hofsos.html">
+					        <div class="small_thelamerkurlaug" id="thelamerkurlaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Þelamörk</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Laug</li>
+					                            <li>Sun</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>16:00 - 21:00</li>
+					                            <li>14:00 - 17:00</li>
+					                            <li>Lokað</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix nordur" data-my-order="9">
+					        <a href="hofsos.html">
+					        <div class="small_husavikurlaug" id="husavikurlaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Húsavíkurlaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Fim</li>
+					                            <li>Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 22:00</li>
+					                            <li>06:30 - 22:00</li>
+					                            <li>08:30 - 22:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix vestur renni" data-my-order="10">
+					        <a href="hofsos.html">
+					        <div class="small_akraneslaug" id="akraneslaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Jaðarsbakkalaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Fim</li>
+					                            <li>Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 22:00</li>
+					                            <li>06:30 - 20:00</li>
+					                            <li>09:00 - 18:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix vestur renni" data-my-order="11">
+					        <a href="hofsos.html">
+					        <div class="small_borgarneslaug" id="borgarneslaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Borgarneslaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Laug - Sun</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>07:05 - 20:15</li>
+					                            <li>11:00 - 15:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix vestur" data-my-order="12">
+					        <a href="hofsos.html">
+					        <div class="small_patreksfjardarlaug" id="patreksfjardarlaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Patreksfjörður</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix austur renni" data-my-order="13">
+					        <a href="hofsos.html">
+					        <div class="small_hornafjardarlaug" id="hornafjardarlaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Hornafjörður</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Fim</li>
+					                            <li>Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 22:00</li>
+					                            <li>06:30 - 22:00</li>
+					                            <li>08:30 - 22:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix austur renni" data-my-order="14">
+					        <a href="hofsos.html">
+					        <div class="small_egilsstadalaug" id="egilsstadalaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Egilsstaðir</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Fim</li>
+					                            <li>Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 22:00</li>
+					                            <li>06:30 - 20:00</li>
+					                            <li>09:00 - 18:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix austur renni" data-my-order="15">
+					        <a href="hofsos.html">
+					        <div class="small_eskifjardarlaug" id="eskifjardarlaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Eskifjörður</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Laug - Sun</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>07:05 - 20:15</li>
+					                            <li>11:00 - 15:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix austur renni" data-my-order="16">
+					        <a href="hofsos.html">
+					        <div class="small_neskaupstadarlaug" id="neskaupstadarlaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Neskaupstaður</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix sudur renni" data-my-order="17">
+					        <a href="hofsos.html">
+					        <div class="small_gardur_laug" id="gardur_laug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Sundlaugin Garði</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix sudur renni" data-my-order="18">
+					        <a href="hofsos.html">
+					        <div class="small_hella_laug" id="hella_laug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Sundlaug Hellu</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix sudur renni" data-my-order="19">
+					        <a href="hofsos.html">
+					        <div class="small_selfosslaug" id="selfosslaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Selfosslaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix sudur" data-my-order="20">
+					        <a href="hofsos.html">
+					        <div class="small_brautarholtslaug" id="brautarholtslaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Brautarholtslaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix sudur" data-my-order="21">
+					        <a href="hofsos.html">
+					        <div class="small_vik_laug" id="vik_laug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Sundlaugin Vík</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix hofud renni" data-my-order="22">
+					        <a href="hofsos.html">
+					        <div class="small_lagafellslaug" id="lagafellslaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Lágafellsslaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix hofud renni" data-my-order="23">
+					        <a href="hofsos.html">
+					        <div class="small_breidholtslaug" id="breidholtslaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Breiðholtslaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+					    <div class="col-md-3 col-sm-12 smallCard mix hofud renni" data-my-order="24">
+					        <a href="hofsos.html">
+					        <div class="small_alftaneslaug" id="alftaneslaug">
+					            <div class="smallPlaceInfo">
+					                <h2><img class="stad_icon_minni" src=
+					                "icon/stadsetningar_icon.svg"> Álftaneslaug</h2>
+					            </div>
+					            <div class="smallTimeInfo">
+					                <p>AFGREIÐSLUTÍMI</p>
+					                <div class="row open">
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>Mán - Föst</li>
+					                            <li>Helgar</li>
+					                        </ul>
+					                    </div>
+					                    <div class="col-md-6">
+					                        <ul>
+					                            <li>06:30 - 21:30</li>
+					                            <li>08:00 - 19:00</li>
+					                        </ul>
+					                    </div>
+					                </div>
+					            </div>
+					        </div></a>
+					    </div>
+
+
+               </div>
+        </div>
+    
+</div>
+
+<!--CARDS 2 in row-end-->
+
+
+
+<!--footer-->
+<div class="container">
+	<footer>
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <p><b class="glyphicon glyphicon-copyright-mark"></b> sundlaugar.is</p>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <p class="footer_facebook"><a href="www.facebook.com"><img class="fb_img" src="icon/facebook_icon.svg"> Við erum á Facebook</a></p>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <p class="umslag"><a href="#"><img class="umslag_img" src="icon/umslag_icon.svg">  sundlaugar@sundlaugar.is</a></p>
+            </div>
+        <div>
+    </footer>
+</div>
+
+<!--footer-end-->
+</div>
+
+	
+
+
+
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/typeahead.bundle.js"></script>
+	<script src="js/modernizr.custom.69789.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

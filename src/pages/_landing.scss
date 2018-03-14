@@ -1,0 +1,674 @@
+/* Hér byrjar scss fyrir undirsíðuna */
+
+
+.fyrsti_hluti_um_laug {
+	margin-bottom: em(160);
+  @media only screen and (max-width: 992px) {
+        margin-bottom: em(30);
+       }
+      img {
+      height: em(400);
+      @media only screen and (max-width: 580px) {
+        height: em(270);
+       }
+      } 
+      .linur_kassi {
+          @media only screen and (max-width: 1200px) {
+          margin-right: -100px;
+          } 
+          @media only screen and (max-width: 992px) {
+          float: left !important;
+          } 
+      }
+}
+.fyrsti_hluti_textinn {
+	    margin-top: 160px;
+      @media only screen and (max-width: 992px) {
+          margin-top: -50px;
+          width: 550px;
+          height: 230px;
+          border: em(5) solid $blue_main;
+          padding: 30px 40px 40px 40px;
+          margin-bottom: 40px;
+            .kort {
+              bottom: em(160); 
+              right: em(-30);
+            }
+          }
+
+          @media only screen and (max-width: 580px) {
+          margin-top: em(-60);
+          width: em(395);
+          height: em(230);
+          border: em(5) solid $blue_main;
+          padding: 20px 40px 40px 40px;
+          margin-bottom: 20px;
+              .kort {
+              bottom: em(-20); 
+              right: em(50);
+              transform: rotate(0deg);
+                img {
+                transform: rotate(0deg);
+                padding-bottom: em(5);
+                }
+              }
+          } 
+      h2 {
+      	@include textLayout(h2Undirsida);
+      }
+      p {
+      	@include textLayout(pUndirsida);
+      }
+      a {
+      	@include textLayout(aUndirsida);
+      }
+      .vefslod {
+      color: $neon_pink;
+        &:hover {
+        cursor: pointer;
+        color: $neon_pink_hover;
+        }
+      }
+}
+.kort {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: em(150);
+      bottom: em(40);
+      font-size: em(15);
+      letter-spacing: em(1);
+      height: em(90);
+		
+      .text_line {
+      background: $blue_main; 
+      width: em(60);
+      height: em(2);
+      margin-top: em(30);
+      margin-bottom: em(30);
+      }
+      .efsta_linan {
+      margin-top: 20px;
+      margin-bottom: 0;
+      }
+      img {
+      height: em(40);
+      transform: rotate(90deg);
+      margin-left: em(15);
+      margin-bottom: em(4);
+      }
+}
+
+.annar_hluti_opnunartimi {
+	padding: em(40) 0 em(40) 0;
+	margin-bottom: em(160);
+  @media only screen and (max-width: 992px) {
+        margin-bottom: em(30);
+       }
+	border: em(5) solid $neon_green;
+	h2 {
+			@include textLayout(h2Undirsida);
+				text-align: center;
+	}
+	h3 {
+			@include textLayout(h3Undirsida);
+			text-align: left;
+	}
+	p {
+			@include textLayout(pUndirsida);
+			text-align: left;
+      @media only screen and (max-width: 768px) {
+        width: em(340);
+      }
+	}
+}
+.thridji_hluti_img {
+   img {
+    height: em(780);
+   float: right;
+   margin-right: em(10);
+   padding-bottom: em(100);
+   @media only screen and (max-width: 992px) {
+            margin-top: em(20);
+            height: em(1000);
+          } 
+   @media only screen and (max-width: 768px) {
+    height: em(694);
+    padding-left: em(60);
+    margin: 0 auto;
+    
+    } 
+  }
+
+}
+.thridji_hluti_textinn_bara {
+ padding-bottom: em(30);
+
+  @media only screen and (max-width: 992px) {
+            border: em(5) solid $white;
+            padding-top: em(10);
+            margin: em(15);
+          } 
+    h2 { 
+      @media only screen and (max-width: 1200px) {
+      padding-left: em(30);
+      } 
+    } 
+}
+.thridji_hluti_verdskra {
+	padding-top: em(100);
+   @media only screen and (max-width: 992px) {
+            padding-top: em(30);
+          } 
+	background: $blue_main;
+	margin-bottom: em(80);
+
+	h2 {
+		@include textLayout(h2Undirsida);
+		color: $white;
+		margin-left: em(40);
+	}
+	p {
+		@include textLayout(pUndirsida);
+		color: $white;
+		line-height: em(35);
+	}
+	.thridji_hluti_textinn_left_fyrri {
+		padding-top: em(30);
+		padding-right: em(70);
+		margin-left: em(60);
+     @media only screen and (max-width: 1200px) {
+            padding-left: em(30);
+            padding-right: em(20);
+          } 
+      @media only screen and (max-width: 768px) {
+      width: em(260);
+      margin-left: em(40);
+      padding: 0;
+      } 
+
+	}
+		.thridji_hluti_textinn_right {
+		padding-top: em(150);
+		padding-right: em(130);
+     @media only screen and (max-width: 992px) {
+            padding-top: 40px;
+            padding-left: 68px;
+          } 
+      @media only screen and (max-width: 768px) {
+      width: em(260);
+      margin-left: em(40);
+      padding: 0;
+      padding-left: em(17);
+      } 
+
+	}
+	.thridji_hluti_textinn_left_seinni {
+		padding-top: em(60);
+		padding-right: em(70);
+		margin-left: em(60);
+    @media only screen and (max-width: 1200px) {
+            padding-left: em(30);
+            padding-top: em(30);
+          } 
+    @media only screen and (max-width: 768px) {
+    width: em(260);
+    margin-left: em(40);
+    padding: 0;
+    } 
+	}
+	.thridji_hluti_img {
+		left: em(2);
+	}
+}
+
+.fimmti_hluti_nanar {
+	margin-bottom: em(180);
+	img {
+		height: em(400);
+      @media only screen and (max-width: 768px) {
+      height: em(250);
+      padding-left: em(10);
+          } 
+	}
+	p {
+		@include textLayout(pUndirsida);
+		width: em(470);
+		line-height: em(35);
+		margin-top: em(220);
+     @media only screen and (max-width: 1200px) {
+          width: em(320);
+          margin-left: em(80);
+          } 
+     @media only screen and (max-width: 992px) {
+          width: em(470);
+          margin-top: em(40);
+          border: em(5) solid $blue_main;
+          padding: em(40);
+          } 
+       @media only screen and (max-width: 560px) {
+        width: em(430);
+        margin: 0 auto;
+        margin-top: 21px;
+        margin-bottom: -150px;
+      } 
+	}
+}
+
+
+
+/* 
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out;
+}
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  user-select: none;
+}
+.owl-carousel.owl-loaded {
+  display: block;
+}
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+.owl-carousel .owl-refresh .owl-item {
+  display: none;
+}
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  }
+}
+.owl-carousel.owl-text-select-on .owl-item {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+.owl-carousel .owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+
+
+
+/* Hér byrjar scss fyrir icon carousel-ið */
+
+.fjordi_hluti_icon {
+	width: 100%;
+	margin-bottom: em(160);
+	margin-top: em(80);
+      @media only screen and (max-width: 560px) {
+      margin-bottom: em(60);
+      margin-top: em(20);
+      }
+	h3 {
+		@include textLayout(h3Icon);
+	}
+	p {
+		@include textLayout(pIcon);
+		width: em(210);
+		margin: 0 auto;
+	}
+	.text_line_icon {
+			background: $neon_green; 
+			width: em(60);
+			height: em(2);
+			margin: 0 auto;
+			margin-top: em(20);
+			margin-bottom: em(20);
+		}
+	.item {
+		text-align: center;
+		img {
+			width: em(150);
+			margin: 0 auto;
+		}
+	}
+}
+
+
+/* Hér byrjar scss fyrir linur utan um texta */
+
+.closest-events_i {
+	margin-top: em(100);
+	right: em(170);
+  z-index: 9999;
+  width: em(600);
+  height: em(350);
+  position: absolute;
+  display: block;
+  @media only screen and (max-width: 992px) {
+          display: none;
+      } 
+}
+
+.no-touch .closest-events_i:hover .line-1 i {
+    transition: width 0.4s ease-out;
+}
+
+.no-touch .closest-events_i:hover .line-2 i {
+    transition: height 0.4s ease-out 0.4s;
+}
+
+.no-touch .closest-events_i:hover .line-3 i {
+    transition: width 0.4s ease-out 0.8s;
+}
+
+.no-touch .closest-events_i:hover .line-4 i {
+    transition: height 0.4s ease-out 1.2s;
+}
+
+.no-touch .closest-events_i:hover .line-1 i,
+.no-touch .closest-events_i:hover .line-2 i,
+.no-touch .closest-events_i:hover .line-3 i,
+.no-touch .closest-events_i:hover .line-4 i {
+    width: 100%;
+    height: 100%;
+}
+
+.line-2,
+.line-4 {
+    width: 4px;
+    height: 0;
+    background: transparent;
+    position: absolute;
+    i {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: $blue_main;
+    }
+}
+.line-1,
+.line-3 {
+    height: 4px;
+    width: 0;
+    background: transparent;
+    position: absolute;
+    i {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: $blue_main;
+    }
+}
+
+.line-1 {
+    left: 0;
+    top: 0;
+    i {
+    left: 0;
+    top: 0;
+    transition: width 0.4s ease-out 1.2s;
+    }
+}
+
+.inview .line-1 {
+    transition: background 0.4s ease, width 0.4s ease-out;
+    width: 100%;
+}
+.line-2 {
+    top: 0;
+    right: 0;
+    i {
+    top: 0;
+    left: 0;
+    transition: height 0.4s ease-out 0.8s;
+  }
+}
+
+.inview .line-2 {
+    transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+    height: 100%;
+}
+.line-3 {
+    right: 0;
+    bottom: 0;
+    i {
+    right: 0;
+    top: 0;
+    transition: width 0.4s ease-out 0.4s;
+  }
+}
+
+.inview .line-3 {
+    transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+    width: 100%;
+}
+.line-4 {
+    bottom: 0;
+    left: 0;
+    i {
+    bottom: 0;
+    left: 0;
+    transition: height 0.4s ease-out 0s;
+    }
+}
+.inview .line-4 {
+    transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+    height: 100%;
+}
+
+
+
+/* Hér byrjar scss fyrir HVITAR linur utan um texta */
+
+.closest-events_i_white {
+	left: em(168);
+    z-index: 9999;
+    width: em(880);
+    height: em(700);
+    margin-top: em(-30);
+    position: absolute;
+    display: block;
+    @media only screen and (max-width: 992px) {
+          display: none;
+      } 
+}
+
+
+.no-touch .closest-events_i_white:hover .line-1_white i {
+    transition: width 0.4s ease-out;
+}
+
+.no-touch .closest-events_i_white:hover .line-2_white i {
+    transition: height 0.4s ease-out 0.4s;
+}
+
+.no-touch .closest-events_i_white:hover .line-3_white i {
+    transition: width 0.4s ease-out 0.8s;
+}
+
+.no-touch .closest-events_i_white:hover .line-4_white i {
+    transition: height 0.4s ease-out 1.2s;
+}
+
+.no-touch .closest-events_i_white:hover .line-1_white i,
+.no-touch .closest-events_i_white:hover .line-2_white i,
+.no-touch .closest-events_i_white:hover .line-3_white i,
+.no-touch .closest-events_i_white:hover .line-4_white i {
+    width: 100%;
+    height: 100%;
+}
+
+
+.line-2_white,
+.line-4_white {
+    width: 4px;
+    height: 0;
+    background: transparent;
+    position: absolute;
+    i {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: $white;
+    }
+}
+.line-1_white,
+.line-3_white {
+    height: 4px;
+    width: 0;
+    background: transparent;
+    position: absolute;
+    i {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: $white;
+  }
+}
+.line-1_white {
+    left: 0;
+    top: 0;
+    i {
+    left: 0;
+    top: 0;
+    transition: width 0.4s ease-out 1.2s
+  }
+}
+
+.inview .line-1_white {
+    transition: background 0.4s ease, width 0.4s ease-out;
+    width: 100%;
+}
+.line-2_white {
+    top: 0;
+    right: 0;
+    i {
+    top: 0;
+    left: 0;
+    transition: height 0.4s ease-out 0.8s;
+    }
+}
+.inview .line-2_white {
+    transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+    height: 100%;
+}
+.line-3_white {
+    right: 0;
+    bottom: 0;
+    i {
+    right: 0;
+    top: 0;
+    transition: width 0.4s ease-out 0.4s;
+  }
+}
+.inview .line-3_white {
+    transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+    width: 100%;
+}
+.line-4_white {
+    bottom: 0;
+    left: 0;
+    i {
+    bottom: 0;
+    left: 0;
+    transition: height 0.4s ease-out 0s;
+    }
+}
+.inview .line-4_white {
+    transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+    height: 100%;
+}
+

@@ -1,0 +1,42 @@
+footer {
+	margin-top: em(80);
+	@include textLayout(footertext);
+	
+	.fb_img {
+		width: em(27);
+		@media only screen and (max-width: 992px) {
+     text-align: center;
+     float: left;
+      }
+	}
+	.umslag {
+		float: right;
+		@media only screen and (max-width: 992px) {
+     text-align: center;
+     float: left !important;
+      }
+	}
+	.umslag_img {
+		width: em(35);
+		
+		@media only screen and (max-width: 992px) {
+     text-align: center;
+     float: left !important;
+      }
+	}
+	
+	margin-bottom: em(40);
+	padding-top: em(20);
+	border-top: em(2) solid $blue_main;
+	.footer_facebook {
+		text-align: center;
+		@media only screen and (max-width: 992px) {
+         text-align: none;
+         float: left;
+          }
+  	}
+  	@media only screen and (max-width: 992px) {
+         margin-bottom: em(20);
+         float: left;
+          } 
+}

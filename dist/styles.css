@@ -1,0 +1,2689 @@
+@charset "UTF-8";
+/* Stillingar fyrir fonta - avenir-next */
+@font-face {
+  font-family: 'font-demi';
+  src: url("../fonts/avenir-next/avenirnextltpro-demi-webfont.eot"), url("../fonts/avenir-next/avenirnextltpro-demi-webfont.woff") format("woff"), url("../fonts/avenir-next/avenirnextltpro-demi-webfont.ttf") format("truetype"), url("../fonts/avenir-next/avenirnextltpro-demi-webfont.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'font-regular';
+  src: url("../fonts/avenir-next/avenirnextltpro-regular-webfont.eot"), url("../fonts/avenir-next/avenirnextltpro-regular-webfont.woff") format("woff"), url("../fonts/avenir-next/avenirnextltpro-regular-webfont.ttf") format("truetype"), url("../fonts/avenir-next/avenirnextltpro-regular-webfont.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'font-ultlt';
+  src: url("../fonts/avenir-next/AvenirNextLTPro-UltLt.eot"), url("../fonts/avenir-next/AvenirNextLTPro-UltLt.woff") format("woff"), url("../fonts/avenir-next/AvenirNextLTPro-UltLt.ttf") format("truetype"), url("../fonts/avenir-next/AvenirNextLTPro-UltLt.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'font-bebas';
+  src: url("../fonts/bebas-neue/bebas_neue_regular-webfont.eot"), url("../fonts/bebas-neue/bebas_neue_regular-webfont.woff") format("woff"), url("../fonts/bebas-neue/bebas_neue_regular-webfont.ttf") format("truetype"), url("../fonts/bebas-neue/bebas_neue_regular-webfont.woff2") format("woff2");
+  /*  */
+}
+
+/* Hér byrjar scss fyrir leitina */
+.leitar-input {
+  font-family: 'font-regular';
+  font-size: 1.5em;
+  color: #B6B6B6;
+  width: 100%;
+  height: 6.25em;
+  border: none;
+  border-bottom: 0.125em solid #19FFB3;
+  border-left: 4.375em solid #19FFB3;
+  padding-bottom: 1.875em;
+  padding-top: 2.1875em;
+  text-indent: 5em;
+  margin-bottom: 1.875em;
+}
+
+.leitar-input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .leitar-input {
+    /* For mobile phones: */
+    font-family: 'font-regular';
+    font-size: 1.25em;
+    color: #B6B6B6;
+    height: 4.375em;
+    border-left: 3.125em solid #19FFB3;
+    padding-bottom: 0.625em;
+    padding-top: 0.875em;
+    text-indent: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .leitar-input {
+    /* For mobile phones: */
+    font-family: 'font-regular';
+    font-size: 1.25em;
+    color: #B6B6B6;
+    height: 2.5em;
+    border-left: 1.875em solid #19FFB3;
+    padding-bottom: 0.125em;
+    padding-top: 0.25em;
+    text-indent: 1.25em;
+  }
+}
+
+/* Hér endar scss fyrir leitina */
+/* Hér byrjar scss fyrir flokka valið */
+.stad_val ul {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.flokka-val {
+  padding-top: 0.5em;
+  margin-left: 5em;
+}
+
+.flokka-val button {
+  background: #fff;
+  border: none;
+  display: inline-block;
+  margin-left: 1.25em;
+  margin-right: 3.125em;
+  margin-top: 1.875em;
+  position: relative;
+  padding: 0 0 0.375em 0;
+  font-family: 'font-demi';
+  font-size: 1em;
+  color: rgba(55, 88, 116, 0.5);
+  text-transform: uppercase;
+}
+
+.flokka-val button:hover {
+  color: #375874;
+}
+
+.flokka-val button:before, .flokka-val button.active:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.375em;
+  width: 0;
+  -webkit-transition: width 0s ease, background .5s ease;
+  transition: width 0s ease, background .5s ease;
+}
+
+.flokka-val button:after, .flokka-val button.active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 0.375em;
+  width: 0;
+  background: #19FFB3;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+.flokka-val button:hover:before, .flokka-val button.active:before {
+  width: 100%;
+  background: #19FFB3;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+}
+
+.flokka-val button:hover:after, .flokka-val button.active:after {
+  width: 100%;
+  background: transparent;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+.flokka-val button.active {
+  color: #375874;
+}
+
+@media only screen and (max-width: 1200px) {
+  .flokka-val {
+    margin-left: 0.0625em;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .flokka-val .flokka-val-inner_2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flokka-val {
+    display: none;
+    background-color: #ffffff;
+    z-index: 9999999;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  .flokka-val .flokka-val-inner {
+    display: none;
+  }
+  .flokka-val .flokka-val-inner_2 button.myMobileButton {
+    font-size: 1.5em;
+    color: #375874;
+    width: 12.5em;
+    padding: 1.875em 0 2.5em 0.625em;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 420px) {
+  .flokka-val .flokka-val-inner_2 button.myMobileButton {
+    margin-left: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flokka-val .flokka-val-inner_2 button.myMobileButton:before {
+    display: none;
+  }
+  .flokka-val .flokka-val-inner_2 button.myMobileButton:after {
+    display: none;
+  }
+  .flokka-val ul {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .flokka-val button {
+    margin-left: 0em;
+  }
+}
+
+button.velja_stad {
+  font-family: 'font-demi';
+  font-size: 1em;
+  color: #375874;
+  text-transform: uppercase;
+  background: #FFF;
+  padding: 0.5em 1.0625em;
+  height: 2.375em;
+  margin-top: -0.375em;
+  margin-left: 1.25em;
+  border: 0.1875em solid #19FFB3;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #19FFB3;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+  display: none;
+}
+
+button.velja_stad:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  button.velja_stad {
+    display: block;
+    position: absolute;
+  }
+}
+
+button.velja_stad:hover {
+  box-shadow: inset 15.625em 0 0 0 #19FFB3;
+  color: #FFF;
+}
+
+.right_flokka-val {
+  margin-left: -3.125em;
+}
+
+.right_flokka-val .first {
+  border-left: 0.125em solid #375874;
+  margin-left: 0.25em;
+  margin-right: 0.5em;
+  padding-left: 3.75em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .right_flokka-val .first {
+    border: none;
+    margin-left: 0em;
+    margin-right: 0.5em;
+    padding-left: 0em;
+  }
+}
+
+.right_flokka-val #two_cards img, .right_flokka-val #four_cards img {
+  height: 1.75em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .right_flokka-val {
+    margin-left: -0.625em;
+    margin-top: 1.4375em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .right_flokka-val .opid_nuna_takki {
+    float: right;
+    margin-right: 1.25em;
+    margin-top: -1.875em;
+    margin-bottom: 0.625em;
+  }
+}
+
+button.opid_nuna_takki {
+  font-family: 'font-demi';
+  font-size: 1em;
+  color: #375874;
+  text-transform: uppercase;
+  background: #FFF;
+  padding: 0.5em 1.0625em;
+  height: 2.375em;
+  margin: 1.5625em;
+  margin-left: 3.125em;
+  border: 0.1875em solid #F04A83;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #F04A83;
+  -webkit-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+button.opid_nuna_takki:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  button.opid_nuna_takki {
+    margin: 0em;
+    margin-left: 1.25em;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  button.opid_nuna_takki {
+    margin-left: 5.9375em;
+  }
+}
+
+button.opid_nuna_takki:hover, button.opid_nuna_takki.active {
+  box-shadow: inset 15.625em 0 0 0 #F04A83;
+  color: #FFF;
+}
+
+/* Hér ENDAR scss fyrir flokka valið */
+/* Hér byrjar scss fyrir bigCards */
+.big_hofsoslaug {
+  background-image: url(../images/hofsos.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.big_krossneslaug {
+  background-image: url(../images/krossnes.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.big_laugardalslaug {
+  background-image: url(../images/laugardalslaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.big_sundholl_rvk {
+  background-image: url(../images/sundholl_rvk.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.big_laugaskard {
+  background-image: url(../images/laugaskard.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.big_nautholsvik {
+  background-image: url(../images/nautholsvik.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.akureyrarlaug {
+  background-image: url(../images/akureyrarlaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.thelamerkurlaug {
+  background-image: url(../images/thelamerkurlaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.husavikurlaug {
+  background-image: url(../images/husavikurlaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.akraneslaug {
+  background-image: url(../images/akraneslaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.borgarneslaug {
+  background-image: url(../images/borgarneslaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.patreksfjardarlaug {
+  background-image: url(../images/patreksfjardarlaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.hornafjardarlaug {
+  background-image: url(../images/hornafjardarlaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.egilsstadalaug {
+  background-image: url(../images/egilsstadalaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.eskifjardarlaug {
+  background-image: url(../images/eskifjardarlaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.neskaupstadarlaug {
+  background-image: url(../images/neskaupstadarlaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.gardur_laug {
+  background-image: url(../images/gardur_laug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.hella_laug {
+  background-image: url(../images/hella_laug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.selfosslaug {
+  background-image: url(../images/selfosslaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.vik_laug {
+  background-image: url(../images/vik_laug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.brautarholtslaug {
+  background-image: url(../images/brautarholtslaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.lagafellslaug {
+  background-image: url(../images/lagafellslaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.alftaneslaug {
+  background-image: url(../images/alftaneslaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.breidholtslaug {
+  background-image: url(../images/breidholtslaug.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 27.5em;
+}
+
+.bigCard:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 8.8125em;
+  height: 0.125em;
+  width: 0;
+  -webkit-transition: width 0s ease, background .7s ease;
+  transition: width 0s ease, background .7s ease;
+}
+
+@media only screen and (max-width: 992px) {
+  .bigCard:before {
+    display: none;
+  }
+}
+
+.bigCard:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  height: 0.125em;
+  bottom: 8.8125em;
+  left: 5.625em;
+  width: 0;
+  background: #F04A83;
+  -webkit-transition: width .7s ease;
+  transition: width .7s ease;
+}
+
+@media only screen and (max-width: 992px) {
+  .bigCard:after {
+    display: none;
+  }
+}
+
+.bigCard:hover:before {
+  width: 47.4%;
+  background: #F04A83;
+  bottom: 8.8125em;
+  left: 5.625em;
+  -webkit-transition: width .7s ease;
+  transition: width .7s ease;
+  z-index: 9999;
+}
+
+.bigCard:hover:after {
+  width: 47.4%;
+  background: transparent;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+.inner_bigCard {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.inner_bigCard:hover {
+  cursor: pointer;
+  padding-bottom: 0.125em;
+}
+
+.inner_bigCard_headline {
+  width: 9.375em;
+  height: 2em;
+  background: rgba(55, 88, 116, 0.5);
+  float: left;
+  font-family: 'font-bebas';
+  font-size: 2.25em;
+  text-indent: 2.125em;
+  color: #fff;
+}
+
+.inner_bigCard_headline .stad_icon_stor {
+  width: 0.625em;
+  margin-right: 0.4375em;
+  margin-top: -0.125em;
+  margin-left: 0.625em;
+}
+
+.inner_bigCard_headline h2 {
+  margin-left: -2.1875em;
+}
+
+.inner_bigCard_afgreidslutimar {
+  width: 22.5em;
+  height: 11.25em;
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0;
+  margin-left: 1.875em;
+}
+
+@media only screen and (max-width: 775px) {
+  .inner_bigCard_afgreidslutimar {
+    margin-left: -0.9375em;
+  }
+}
+
+.inner_bigCard_afgreidslutimar h3 {
+  font-family: 'font-regular';
+  font-size: 1.25em;
+  color: #375874;
+  text-transform: uppercase;
+  margin-left: 2.1875em;
+  margin-top: 2.1875em;
+}
+
+@media only screen and (max-width: 992px) {
+  .inner_bigCard_afgreidslutimar h3 {
+    border-bottom: 0.125em solid #F04A83;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .inner_bigCard_afgreidslutimar h3 {
+    border-bottom: 0.125em solid #F04A83;
+    width: 15.4375em;
+  }
+}
+
+.inner_bigCard_afgreidslutimar ul {
+  margin-top: 0.625em;
+}
+
+.inner_bigCard_afgreidslutimar ul li {
+  font-family: 'font-demi';
+  font-size: 1em;
+  color: #375874;
+  line-height: 1.5em;
+}
+
+.inner_bigCard_afgreidslutimar_timar ul {
+  margin-left: -1.25em;
+}
+
+@media only screen and (max-width: 992px) {
+  .inner_bigCard_afgreidslutimar_timar ul {
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .inner_bigCard_afgreidslutimar_timar ul li {
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .inner_bigCard_afgreidslutimar_dagar {
+    float: left;
+  }
+}
+
+.row-bigCard {
+  margin: 0 auto;
+}
+
+/* Hér endar scss fyrir bigCards */
+/* Hér byrjar scss fyrir cardsSmall */
+.smallPlaceInfo {
+  background-color: rgba(55, 88, 116, 0.5);
+  width: 100%;
+  height: 3.125em;
+}
+
+.smallCard {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.875em;
+}
+
+.smallCard .smallTimeInfo {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: -7.75em;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 10.625em;
+  width: 100%;
+}
+
+.smallCard .smallTimeInfo p {
+  font-family: 'font-regular';
+  font-size: 1.125em;
+  color: #375874;
+  margin-left: 0.9375em;
+  margin-top: 0.625em;
+}
+
+.smallCard .smallTimeInfo ul {
+  list-style-type: none;
+  padding-left: 0.9375em;
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #375874;
+  line-height: 2em;
+}
+
+.smallCard .stad_icon_minni {
+  width: 0.75em;
+  margin-right: 0.375em;
+  margin-top: -0.125em;
+}
+
+.smallCard:hover .smallTimeInfo {
+  bottom: 0;
+}
+
+.Cards_big {
+  margin-top: 1.25em;
+}
+
+@media only screen and (max-width: 420px) {
+  .Cards_big {
+    margin-left: 2.1875em;
+  }
+}
+
+.cardsSmall .small_hofsoslaug {
+  background-image: url(../images/small_hofsos.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_hofsoslaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_hofsoslaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_hofsoslaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_krossneslaug {
+  background-image: url(../images/small_krossnes.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_krossneslaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_krossneslaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_krossneslaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_laugardalslaug {
+  background-image: url(../images/small_laugardalslaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_laugardalslaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_laugardalslaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_laugardalslaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_sundholl_rvk {
+  background-image: url(../images/small_sundholl_rvk.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_sundholl_rvk h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_sundholl_rvk p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_sundholl_rvk .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_laugaskard {
+  background-image: url(../images/small_laugaskard.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_laugaskard h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_laugaskard p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_laugaskard .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_nautholsvik {
+  background-image: url(../images/small_nautholsvik.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_nautholsvik h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_nautholsvik p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_nautholsvik .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_akureyrarlaug {
+  background-image: url(../images/small_akureyrarlaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_akureyrarlaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_akureyrarlaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_akureyrarlaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_thelamerkurlaug {
+  background-image: url(../images/small_thelamerkurlaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_thelamerkurlaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_thelamerkurlaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_thelamerkurlaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_husavikurlaug {
+  background-image: url(../images/small_husavikurlaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_husavikurlaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_husavikurlaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_husavikurlaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_akraneslaug {
+  background-image: url(../images/small_akraneslaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_akraneslaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_akraneslaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_akraneslaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_borgarneslaug {
+  background-image: url(../images/small_borgarneslaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_borgarneslaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_borgarneslaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_borgarneslaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_patreksfjardarlaug {
+  background-image: url(../images/small_patreksfjardarlaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_patreksfjardarlaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_patreksfjardarlaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_patreksfjardarlaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_hornafjardarlaug {
+  background-image: url(../images/small_hornafjardarlaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_hornafjardarlaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_hornafjardarlaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_hornafjardarlaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_egilsstadalaug {
+  background-image: url(../images/small_egilsstadalaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_egilsstadalaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_egilsstadalaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_egilsstadalaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_eskifjardarlaug {
+  background-image: url(../images/small_eskifjardarlaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_eskifjardarlaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_eskifjardarlaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_eskifjardarlaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_neskaupstadarlaug {
+  background-image: url(../images/small_neskaupstadarlaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_neskaupstadarlaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_neskaupstadarlaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_neskaupstadarlaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_gardur_laug {
+  background-image: url(../images/small_gardur_laug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_gardur_laug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_gardur_laug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_gardur_laug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_hella_laug {
+  background-image: url(../images/small_hella_laug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_hella_laug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_hella_laug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_hella_laug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_selfosslaug {
+  background-image: url(../images/small_selfosslaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_selfosslaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_selfosslaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_selfosslaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_vik_laug {
+  background-image: url(../images/small_vik_laug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_vik_laug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_vik_laug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_vik_laug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_brautarholtslaug {
+  background-image: url(../images/small_brautarholtslaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_brautarholtslaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_brautarholtslaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_brautarholtslaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_lagafellslaug {
+  background-image: url(../images/small_lagafellslaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_lagafellslaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_lagafellslaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_lagafellslaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_alftaneslaug {
+  background-image: url(../images/small_alftaneslaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_alftaneslaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_alftaneslaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_alftaneslaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+.cardsSmall .small_breidholtslaug {
+  background-image: url(../images/small_breidholtslaug.jpg);
+  position: relative;
+  height: 13.75em;
+  background-size: 100% 208px;
+  background-repeat: no-repeat;
+}
+
+.cardsSmall .small_breidholtslaug h2 {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  padding-top: 0.5em;
+  margin-left: 0.625em;
+}
+
+.cardsSmall .small_breidholtslaug p {
+  padding-top: 0.125em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.1875em solid #F04A83;
+}
+
+.cardsSmall .small_breidholtslaug .smallCardLine {
+  margin-top: 0.3125em;
+  margin-bottom: 0.3125em;
+  width: 3.125em;
+  border: 0;
+}
+
+/* Hér endar scss fyrir cardsSmall */
+/* hér er smá til að minni spjoldin komi ekki upp í minni skjastærðum */
+@media only screen and (max-width: 992px) {
+  .Cards_big {
+    display: block !important;
+  }
+  .cardsSmall {
+    display: none !important;
+  }
+  #two_cards {
+    display: none;
+  }
+  #four_cards {
+    display: none;
+  }
+}
+
+/* Hér er scss fyrir MixItUp */
+#cardsBig .mix {
+  display: none;
+}
+
+#cards_small .mix {
+  display: none;
+}
+
+.glyphicon-menu-right {
+  color: #19FFB3;
+}
+
+/* Hér byrjar scss fyrir undirsíðuna */
+.fyrsti_hluti_um_laug {
+  margin-bottom: 10em;
+}
+
+@media only screen and (max-width: 992px) {
+  .fyrsti_hluti_um_laug {
+    margin-bottom: 1.875em;
+  }
+}
+
+.fyrsti_hluti_um_laug img {
+  height: 25em;
+}
+
+@media only screen and (max-width: 580px) {
+  .fyrsti_hluti_um_laug img {
+    height: 16.875em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .fyrsti_hluti_um_laug .linur_kassi {
+    margin-right: -100px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .fyrsti_hluti_um_laug .linur_kassi {
+    float: left !important;
+  }
+}
+
+.fyrsti_hluti_textinn {
+  margin-top: 160px;
+}
+
+@media only screen and (max-width: 992px) {
+  .fyrsti_hluti_textinn {
+    margin-top: -50px;
+    width: 550px;
+    height: 230px;
+    border: 0.3125em solid #375874;
+    padding: 30px 40px 40px 40px;
+    margin-bottom: 40px;
+  }
+  .fyrsti_hluti_textinn .kort {
+    bottom: 10em;
+    right: -1.875em;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .fyrsti_hluti_textinn {
+    margin-top: -3.75em;
+    width: 24.6875em;
+    height: 14.375em;
+    border: 0.3125em solid #375874;
+    padding: 20px 40px 40px 40px;
+    margin-bottom: 20px;
+  }
+  .fyrsti_hluti_textinn .kort {
+    bottom: -1.25em;
+    right: 3.125em;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .fyrsti_hluti_textinn .kort img {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    padding-bottom: 0.3125em;
+  }
+}
+
+.fyrsti_hluti_textinn h2 {
+  font-family: 'font-regular';
+  font-size: 1.5em;
+  color: #375874;
+}
+
+.fyrsti_hluti_textinn p {
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #375874;
+}
+
+.fyrsti_hluti_textinn a {
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #375874;
+}
+
+.fyrsti_hluti_textinn .vefslod {
+  color: #F04A83;
+}
+
+.fyrsti_hluti_textinn .vefslod:hover {
+  cursor: pointer;
+  color: #C93D6D;
+}
+
+.kort {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  right: 9.375em;
+  bottom: 2.5em;
+  font-size: 0.9375em;
+  letter-spacing: 0.0625em;
+  height: 5.625em;
+}
+
+.kort .text_line {
+  background: #375874;
+  width: 3.75em;
+  height: 0.125em;
+  margin-top: 1.875em;
+  margin-bottom: 1.875em;
+}
+
+.kort .efsta_linan {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.kort img {
+  height: 2.5em;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 0.9375em;
+  margin-bottom: 0.25em;
+}
+
+.annar_hluti_opnunartimi {
+  padding: 2.5em 0 2.5em 0;
+  margin-bottom: 10em;
+  border: 0.3125em solid #19FFB3;
+}
+
+@media only screen and (max-width: 992px) {
+  .annar_hluti_opnunartimi {
+    margin-bottom: 1.875em;
+  }
+}
+
+.annar_hluti_opnunartimi h2 {
+  font-family: 'font-regular';
+  font-size: 1.5em;
+  color: #375874;
+  text-align: center;
+}
+
+.annar_hluti_opnunartimi h3 {
+  font-family: 'font-ultlt';
+  font-size: 1.5em;
+  color: #375874;
+  text-align: left;
+}
+
+.annar_hluti_opnunartimi p {
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #375874;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .annar_hluti_opnunartimi p {
+    width: 21.25em;
+  }
+}
+
+.thridji_hluti_img img {
+  height: 48.75em;
+  float: right;
+  margin-right: 0.625em;
+  padding-bottom: 6.25em;
+}
+
+@media only screen and (max-width: 992px) {
+  .thridji_hluti_img img {
+    margin-top: 1.25em;
+    height: 62.5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .thridji_hluti_img img {
+    height: 43.375em;
+    padding-left: 3.75em;
+    margin: 0 auto;
+  }
+}
+
+.thridji_hluti_textinn_bara {
+  padding-bottom: 1.875em;
+}
+
+@media only screen and (max-width: 992px) {
+  .thridji_hluti_textinn_bara {
+    border: 0.3125em solid #ffffff;
+    padding-top: 0.625em;
+    margin: 0.9375em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .thridji_hluti_textinn_bara h2 {
+    padding-left: 1.875em;
+  }
+}
+
+.thridji_hluti_verdskra {
+  padding-top: 6.25em;
+  background: #375874;
+  margin-bottom: 5em;
+}
+
+@media only screen and (max-width: 992px) {
+  .thridji_hluti_verdskra {
+    padding-top: 1.875em;
+  }
+}
+
+.thridji_hluti_verdskra h2 {
+  font-family: 'font-regular';
+  font-size: 1.5em;
+  color: #375874;
+  color: #ffffff;
+  margin-left: 2.5em;
+}
+
+.thridji_hluti_verdskra p {
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #375874;
+  color: #ffffff;
+  line-height: 2.1875em;
+}
+
+.thridji_hluti_verdskra .thridji_hluti_textinn_left_fyrri {
+  padding-top: 1.875em;
+  padding-right: 4.375em;
+  margin-left: 3.75em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .thridji_hluti_verdskra .thridji_hluti_textinn_left_fyrri {
+    padding-left: 1.875em;
+    padding-right: 1.25em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .thridji_hluti_verdskra .thridji_hluti_textinn_left_fyrri {
+    width: 16.25em;
+    margin-left: 2.5em;
+    padding: 0;
+  }
+}
+
+.thridji_hluti_verdskra .thridji_hluti_textinn_right {
+  padding-top: 9.375em;
+  padding-right: 8.125em;
+}
+
+@media only screen and (max-width: 992px) {
+  .thridji_hluti_verdskra .thridji_hluti_textinn_right {
+    padding-top: 40px;
+    padding-left: 68px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .thridji_hluti_verdskra .thridji_hluti_textinn_right {
+    width: 16.25em;
+    margin-left: 2.5em;
+    padding: 0;
+    padding-left: 1.0625em;
+  }
+}
+
+.thridji_hluti_verdskra .thridji_hluti_textinn_left_seinni {
+  padding-top: 3.75em;
+  padding-right: 4.375em;
+  margin-left: 3.75em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .thridji_hluti_verdskra .thridji_hluti_textinn_left_seinni {
+    padding-left: 1.875em;
+    padding-top: 1.875em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .thridji_hluti_verdskra .thridji_hluti_textinn_left_seinni {
+    width: 16.25em;
+    margin-left: 2.5em;
+    padding: 0;
+  }
+}
+
+.thridji_hluti_verdskra .thridji_hluti_img {
+  left: 0.125em;
+}
+
+.fimmti_hluti_nanar {
+  margin-bottom: 11.25em;
+}
+
+.fimmti_hluti_nanar img {
+  height: 25em;
+}
+
+@media only screen and (max-width: 768px) {
+  .fimmti_hluti_nanar img {
+    height: 15.625em;
+    padding-left: 0.625em;
+  }
+}
+
+.fimmti_hluti_nanar p {
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #375874;
+  width: 29.375em;
+  line-height: 2.1875em;
+  margin-top: 13.75em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .fimmti_hluti_nanar p {
+    width: 20em;
+    margin-left: 5em;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .fimmti_hluti_nanar p {
+    width: 29.375em;
+    margin-top: 2.5em;
+    border: 0.3125em solid #375874;
+    padding: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .fimmti_hluti_nanar p {
+    width: 26.875em;
+    margin: 0 auto;
+    margin-top: 21px;
+    margin-bottom: -150px;
+  }
+}
+
+/* 
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+.owl-carousel .owl-refresh .owl-item {
+  display: none;
+}
+
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+.owl-carousel.owl-text-select-on .owl-item {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
+.owl-carousel .owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* Hér byrjar scss fyrir icon carousel-ið */
+.fjordi_hluti_icon {
+  width: 100%;
+  margin-bottom: 10em;
+  margin-top: 5em;
+}
+
+@media only screen and (max-width: 560px) {
+  .fjordi_hluti_icon {
+    margin-bottom: 3.75em;
+    margin-top: 1.25em;
+  }
+}
+
+.fjordi_hluti_icon h3 {
+  font-family: 'font-demi';
+  font-size: 1.5em;
+  color: #375874;
+  text-transform: uppercase;
+}
+
+.fjordi_hluti_icon p {
+  font-family: 'font-demi';
+  font-size: 0.875em;
+  color: #375874;
+  width: 13.125em;
+  margin: 0 auto;
+}
+
+.fjordi_hluti_icon .text_line_icon {
+  background: #19FFB3;
+  width: 3.75em;
+  height: 0.125em;
+  margin: 0 auto;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.fjordi_hluti_icon .item {
+  text-align: center;
+}
+
+.fjordi_hluti_icon .item img {
+  width: 9.375em;
+  margin: 0 auto;
+}
+
+/* Hér byrjar scss fyrir linur utan um texta */
+.closest-events_i {
+  margin-top: 6.25em;
+  right: 10.625em;
+  z-index: 9999;
+  width: 37.5em;
+  height: 21.875em;
+  position: absolute;
+  display: block;
+}
+
+@media only screen and (max-width: 992px) {
+  .closest-events_i {
+    display: none;
+  }
+}
+
+.no-touch .closest-events_i:hover .line-1 i {
+  -webkit-transition: width 0.4s ease-out;
+  transition: width 0.4s ease-out;
+}
+
+.no-touch .closest-events_i:hover .line-2 i {
+  -webkit-transition: height 0.4s ease-out 0.4s;
+  transition: height 0.4s ease-out 0.4s;
+}
+
+.no-touch .closest-events_i:hover .line-3 i {
+  -webkit-transition: width 0.4s ease-out 0.8s;
+  transition: width 0.4s ease-out 0.8s;
+}
+
+.no-touch .closest-events_i:hover .line-4 i {
+  -webkit-transition: height 0.4s ease-out 1.2s;
+  transition: height 0.4s ease-out 1.2s;
+}
+
+.no-touch .closest-events_i:hover .line-1 i,
+.no-touch .closest-events_i:hover .line-2 i,
+.no-touch .closest-events_i:hover .line-3 i,
+.no-touch .closest-events_i:hover .line-4 i {
+  width: 100%;
+  height: 100%;
+}
+
+.line-2,
+.line-4 {
+  width: 4px;
+  height: 0;
+  background: transparent;
+  position: absolute;
+}
+
+.line-2 i,
+.line-4 i {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: #375874;
+}
+
+.line-1,
+.line-3 {
+  height: 4px;
+  width: 0;
+  background: transparent;
+  position: absolute;
+}
+
+.line-1 i,
+.line-3 i {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background: #375874;
+}
+
+.line-1 {
+  left: 0;
+  top: 0;
+}
+
+.line-1 i {
+  left: 0;
+  top: 0;
+  -webkit-transition: width 0.4s ease-out 1.2s;
+  transition: width 0.4s ease-out 1.2s;
+}
+
+.inview .line-1 {
+  -webkit-transition: background 0.4s ease, width 0.4s ease-out;
+  transition: background 0.4s ease, width 0.4s ease-out;
+  width: 100%;
+}
+
+.line-2 {
+  top: 0;
+  right: 0;
+}
+
+.line-2 i {
+  top: 0;
+  left: 0;
+  -webkit-transition: height 0.4s ease-out 0.8s;
+  transition: height 0.4s ease-out 0.8s;
+}
+
+.inview .line-2 {
+  -webkit-transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+  transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+  height: 100%;
+}
+
+.line-3 {
+  right: 0;
+  bottom: 0;
+}
+
+.line-3 i {
+  right: 0;
+  top: 0;
+  -webkit-transition: width 0.4s ease-out 0.4s;
+  transition: width 0.4s ease-out 0.4s;
+}
+
+.inview .line-3 {
+  -webkit-transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+  transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+  width: 100%;
+}
+
+.line-4 {
+  bottom: 0;
+  left: 0;
+}
+
+.line-4 i {
+  bottom: 0;
+  left: 0;
+  -webkit-transition: height 0.4s ease-out 0s;
+  transition: height 0.4s ease-out 0s;
+}
+
+.inview .line-4 {
+  -webkit-transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+  transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+  height: 100%;
+}
+
+/* Hér byrjar scss fyrir HVITAR linur utan um texta */
+.closest-events_i_white {
+  left: 10.5em;
+  z-index: 9999;
+  width: 55em;
+  height: 43.75em;
+  margin-top: -1.875em;
+  position: absolute;
+  display: block;
+}
+
+@media only screen and (max-width: 992px) {
+  .closest-events_i_white {
+    display: none;
+  }
+}
+
+.no-touch .closest-events_i_white:hover .line-1_white i {
+  -webkit-transition: width 0.4s ease-out;
+  transition: width 0.4s ease-out;
+}
+
+.no-touch .closest-events_i_white:hover .line-2_white i {
+  -webkit-transition: height 0.4s ease-out 0.4s;
+  transition: height 0.4s ease-out 0.4s;
+}
+
+.no-touch .closest-events_i_white:hover .line-3_white i {
+  -webkit-transition: width 0.4s ease-out 0.8s;
+  transition: width 0.4s ease-out 0.8s;
+}
+
+.no-touch .closest-events_i_white:hover .line-4_white i {
+  -webkit-transition: height 0.4s ease-out 1.2s;
+  transition: height 0.4s ease-out 1.2s;
+}
+
+.no-touch .closest-events_i_white:hover .line-1_white i,
+.no-touch .closest-events_i_white:hover .line-2_white i,
+.no-touch .closest-events_i_white:hover .line-3_white i,
+.no-touch .closest-events_i_white:hover .line-4_white i {
+  width: 100%;
+  height: 100%;
+}
+
+.line-2_white,
+.line-4_white {
+  width: 4px;
+  height: 0;
+  background: transparent;
+  position: absolute;
+}
+
+.line-2_white i,
+.line-4_white i {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: #ffffff;
+}
+
+.line-1_white,
+.line-3_white {
+  height: 4px;
+  width: 0;
+  background: transparent;
+  position: absolute;
+}
+
+.line-1_white i,
+.line-3_white i {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background: #ffffff;
+}
+
+.line-1_white {
+  left: 0;
+  top: 0;
+}
+
+.line-1_white i {
+  left: 0;
+  top: 0;
+  -webkit-transition: width 0.4s ease-out 1.2s;
+  transition: width 0.4s ease-out 1.2s;
+}
+
+.inview .line-1_white {
+  -webkit-transition: background 0.4s ease, width 0.4s ease-out;
+  transition: background 0.4s ease, width 0.4s ease-out;
+  width: 100%;
+}
+
+.line-2_white {
+  top: 0;
+  right: 0;
+}
+
+.line-2_white i {
+  top: 0;
+  left: 0;
+  -webkit-transition: height 0.4s ease-out 0.8s;
+  transition: height 0.4s ease-out 0.8s;
+}
+
+.inview .line-2_white {
+  -webkit-transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+  transition: background 0.4s ease, height 0.4s ease-out 0.4s;
+  height: 100%;
+}
+
+.line-3_white {
+  right: 0;
+  bottom: 0;
+}
+
+.line-3_white i {
+  right: 0;
+  top: 0;
+  -webkit-transition: width 0.4s ease-out 0.4s;
+  transition: width 0.4s ease-out 0.4s;
+}
+
+.inview .line-3_white {
+  -webkit-transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+  transition: background 0.4s ease, width 0.4s ease-out 0.8s;
+  width: 100%;
+}
+
+.line-4_white {
+  bottom: 0;
+  left: 0;
+}
+
+.line-4_white i {
+  bottom: 0;
+  left: 0;
+  -webkit-transition: height 0.4s ease-out 0s;
+  transition: height 0.4s ease-out 0s;
+}
+
+.inview .line-4_white {
+  -webkit-transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+  transition: background 0.4s ease, height 0.4s ease-out 1.2s;
+  height: 100%;
+}
+
+.jumbotron_forsida {
+  background-image: url(../images/forsidu_header_mynd.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 99999 !important;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 25em;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.jumbotron_forsida img {
+  height: 4.375em;
+  margin-top: 10em;
+  margin-left: 12.5em;
+}
+
+.jumbotron_forsida p {
+  font-family: 'font-bebas';
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  color: #fff;
+  margin-left: 8.4375em;
+  margin-top: 0.1875em;
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbotron_forsida {
+    height: 12.5em;
+  }
+  .jumbotron_forsida img {
+    height: 3.125em;
+    margin-top: 6.875em;
+    margin-left: 6.25em;
+  }
+  .jumbotron_forsida p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .jumbotron_forsida {
+    height: 8.125em;
+  }
+  .jumbotron_forsida img {
+    height: 2.1875em;
+    margin-top: 4.6875em;
+    margin-left: 2.5em;
+  }
+  .jumbotron_forsida p {
+    display: none;
+  }
+}
+
+.jumbotron_hofsos {
+  background-image: url(../images/hofsos_header_mynd.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 25em;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 6.25em;
+  margin-top: 3.6875em;
+}
+
+.jumbotron_hofsos .inner_jumbotron_hofsos {
+  background-color: rgba(55, 88, 116, 0.5);
+  height: 3.75em;
+  width: 37.5em;
+  margin-top: 16.25em;
+}
+
+.jumbotron_hofsos .inner_jumbotron_hofsos p {
+  font-family: 'font-bebas';
+  font-size: 2.75em;
+  letter-spacing: 0.0625em;
+  color: #fff;
+  margin-left: 5em;
+  margin-top: 0.25em;
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbotron_hofsos .inner_jumbotron_hofsos {
+    height: 3.125em;
+    width: 22.5em;
+    margin-top: 7.5em;
+  }
+  .jumbotron_hofsos .inner_jumbotron_hofsos p {
+    font-size: 1.625em;
+    margin-left: 5em;
+    padding-top: 0.375em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .jumbotron_hofsos .inner_jumbotron_hofsos {
+    height: 1.875em;
+    width: 12.5em;
+    margin-top: 5em;
+  }
+  .jumbotron_hofsos .inner_jumbotron_hofsos p {
+    font-size: 1.25em;
+    margin-left: 2.5em;
+    padding-top: 0.125em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbotron_hofsos {
+    height: 12.5em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .jumbotron_hofsos {
+    height: 8.125em;
+  }
+}
+
+.nav_logo {
+  height: 1.875em;
+  margin-top: -0.25em;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav_logo {
+    height: 1.5625em;
+  }
+}
+
+.nav_search {
+  background: #375874;
+  height: 3.75em;
+  width: 3.75em;
+  margin-right: 1.25em;
+  display: inline-block;
+}
+
+.nav_search img {
+  margin: 0.875em;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+}
+
+.navbar-header {
+  float: left;
+}
+
+.nav-bar-leitin {
+  float: right;
+}
+
+#dropdown_leit {
+  border-top: 0.0625em solid #F5F5F5;
+  width: 100%;
+  height: 13.75em;
+  display: none;
+  z-index: 9999;
+  position: fixed;
+  background: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  #dropdown_leit {
+    height: 10em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #dropdown_leit {
+    height: 5em;
+  }
+}
+
+/* Hér byrjar scss fyrir dropdown-ið */
+.twitter-typeahead {
+  width: 100%;
+}
+
+.tt-dataset {
+  background: rgba(255, 255, 255, 0.9);
+  border-left: 5.25em solid #19FFB3;
+  font-family: 'font-regular';
+  font-size: 1.25em;
+  color: #375874;
+  line-height: 3.125em;
+  color: #375874;
+}
+
+@media only screen and (max-width: 768px) {
+  .tt-dataset {
+    border-left: 3.125em solid #19FFB3;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .tt-dataset {
+    border-left: 1.875em solid #19FFB3;
+  }
+}
+
+.tt-menu {
+  width: 100%;
+  margin-top: -2.8125em;
+  text-indent: 7.375em;
+}
+
+.tt-menu .tt-suggestion.tt-cursor, .tt-menu .tt-suggestion:hover {
+  background: #19FFB3;
+  color: #ffffff;
+  font-family: "font-demi";
+  background-image: url(../icon/arrow_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 1.375em;
+  background-position: 6% 50%;
+}
+
+.blur {
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+  background-color: rgba(55, 88, 116, 0.5);
+}
+
+header {
+  background: #ffffff;
+  height: 40px;
+  position: fixed;
+  z-index: 9999;
+  text-align: center;
+  top: 0;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
+.nav-up {
+  top: -40px;
+}
+
+.glyphicon-menu-up {
+  color: #375874;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+}
+
+footer {
+  margin-top: 5em;
+  font-family: 'font-demi';
+  font-size: 0.75em;
+  color: #375874;
+  margin-bottom: 2.5em;
+  padding-top: 1.25em;
+  border-top: 0.125em solid #375874;
+}
+
+footer a {
+  color: #375874;
+}
+
+footer a:hover {
+  color: rgba(55, 88, 116, 0.5);
+}
+
+footer .fb_img {
+  width: 1.6875em;
+}
+
+@media only screen and (max-width: 992px) {
+  footer .fb_img {
+    text-align: center;
+    float: left;
+  }
+}
+
+footer .umslag {
+  float: right;
+}
+
+@media only screen and (max-width: 992px) {
+  footer .umslag {
+    text-align: center;
+    float: left !important;
+  }
+}
+
+footer .umslag_img {
+  width: 2.1875em;
+}
+
+@media only screen and (max-width: 992px) {
+  footer .umslag_img {
+    text-align: center;
+    float: left !important;
+  }
+}
+
+footer .footer_facebook {
+  text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+  footer .footer_facebook {
+    text-align: none;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    margin-bottom: 1.25em;
+    float: left;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}

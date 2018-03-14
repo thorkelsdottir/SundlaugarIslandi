@@ -1,0 +1,215 @@
+
+.jumbotron_forsida {
+    background-image: url(../images/forsidu_header_mynd.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 99999 !important;
+    position: relative;
+    background-repeat: no-repeat;
+    height: em(400);
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+
+    img {
+    	height: em(70);
+    	margin-top: em(160);
+    	margin-left: em(200);
+    }
+    p {
+    	@include textLayout(pHeader);
+    	margin-left: em(135);
+    	margin-top: em(3);
+    }
+     @media only screen and (max-width: 768px) {
+        height: em(200);
+        img {
+        height: em(50);
+        margin-top: em(110);
+        margin-left: em(100);
+        }
+        p {
+            display: none;
+        }
+    }    
+
+     @media only screen and (max-width: 400px) {
+        height: em(130);
+        img {
+        height: em(35);
+        margin-top: em(75);
+        margin-left: em(40);
+        }
+        p {
+            display: none;
+        }
+    }          
+}
+
+
+.jumbotron_hofsos {
+    background-image: url(../images/hofsos_header_mynd.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: em(400);
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: em(100);
+    margin-top: em(59);
+    .inner_jumbotron_hofsos {
+        background-color: $blue_transperant;
+        height: em(60);
+        width: em(600);
+        margin-top: em(260);
+        p {
+        @include textLayout(h2Header);
+        margin-left: em(80);
+        margin-top: em(4);
+        }
+        
+        @media only screen and (max-width: 768px) {
+        height: em(50);
+        width: em(360);
+        margin-top: em(120);
+            p {
+            font-size: em(26);
+            margin-left: em(80);
+            padding-top: em(6);
+            }
+        }    
+
+        @media only screen and (max-width: 420px) {
+        height: em(30);
+        width: em(200);
+        margin-top: em(80);
+            p {
+            font-size: em(20);
+            margin-left: em(40);
+            padding-top: em(2);
+            }
+        }     
+    }
+    @media only screen and (max-width: 768px) {
+       height: em(200);
+    }    
+
+     @media only screen and (max-width: 420px) {
+        height: em(130);
+    }          
+}
+
+.nav_logo {
+    height: em(30);
+    margin-top: em(-4);
+     @media only screen and (max-width: 768px) {
+       height: em(25);
+    }            
+}
+.nav_search {
+    background: $blue_main;
+    height: em(60);
+    width: em(60);
+    margin-right: em(20);
+    display: inline-block;
+    img {
+        margin: em(14);
+    }
+}     
+.navbar-default {
+    background-color: $white; 
+}
+.navbar-header {
+    float: left;
+}
+.nav-bar-leitin {
+    float: right;
+}
+#dropdown_leit {
+    border-top: em(1) solid #F5F5F5;
+    width: 100%;
+    height: em(220);
+    display: none;
+    z-index: 9999;
+    position: fixed;
+    background: $white; 
+    @media only screen and (max-width: 768px) {
+        height: em(160);
+    }  
+     @media only screen and (max-width: 400px) {
+        height: em(80);
+    }       
+}
+/* Hér byrjar scss fyrir dropdown-ið */
+
+.twitter-typeahead {
+    width: 100%;
+}
+.tt-dataset {
+    background: $white_transperant;
+    border-left: em(84) solid $neon_green;
+    @include textLayout(pLeitDropdown);
+    color: $blue_main;
+     @media only screen and (max-width: 768px) {
+      border-left: em(50) solid $neon_green;
+    }    
+     @media only screen and (max-width: 400px) {
+        border-left: em(30) solid $neon_green;
+    }    
+}
+.tt-menu {
+    width: 100%;
+    margin-top: em(-45);
+    text-indent: em(118);
+    
+    .tt-suggestion {
+        
+        &.tt-cursor, &:hover {
+        background: $neon_green;
+        color: $white;
+        font-family: "font-demi";
+        background-image: url(../icon/arrow_icon.svg);
+        background-repeat: no-repeat;
+        background-size: em(22);
+        background-position: 6% 50%;
+    
+        }
+    }
+    
+}
+
+
+.blur {
+     -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    background-color: rgba(55, 88, 116, 0.5);
+}
+
+header {
+    background: $white;
+    height: 40px;
+    position: fixed;
+    z-index: 9999;
+    text-align: center;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+    top: -40px;
+}
+.glyphicon-menu-up {
+    color: $blue_main;
+    font-size: em(24);
+    padding-top: em(8);
+}
+
+
+
+
+
+
